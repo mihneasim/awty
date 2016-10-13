@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
-import { EventAddComponent } from './event/add.component';
+//import { AngularFire } from 'angularfire2';
 
 @Component({
     selector: 'my-app',
     moduleId: module.id,
     templateUrl: 'app.component.html'
 })
-export class AppComponent { }
+export class AppComponent {
+
+  //constructor(af: AngularFire) { }
+
+}

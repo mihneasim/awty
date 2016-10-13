@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { EEvent } from './event';
+import { EventService } from './event.service';
 
 @Component({
   moduleId: module.id,
@@ -12,7 +13,7 @@ export class EventAddComponent implements OnInit {
   model: EEvent = new EEvent();
   submitted: boolean = false;
 
-  constructor() {
+  constructor(private _eventService: EventService) {
   }
 
   ngOnInit() {
@@ -24,5 +25,6 @@ export class EventAddComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
+    this._eventService.save(this.model);
   }
 }

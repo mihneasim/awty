@@ -2,7 +2,7 @@
  * System configuration for Angular samples
  * Adjust as necessary for your application needs.
  */
-(function (global) {
+(function(global) {
   System.config({
     paths: {
       // paths serve as alias
@@ -25,8 +25,10 @@
       '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
 
       // other libraries
-      'rxjs':                      'npm:rxjs',
+      'rxjs': 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+      //'firebase':                  'npm:firebase',
+      //'angularfire2': 'npm:angularfire2'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -40,7 +42,15 @@
       'angular-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
-      }
+      }//,
+      //firebase: {
+      //  main: './firebase.js',
+      //  defaultExtension: 'js'
+      //},
+      //angularfire2: {
+      //  main: 'angularfire2.js',
+      //  defaultExtension: 'js'
+      //}
     }
   });
 })(this);
